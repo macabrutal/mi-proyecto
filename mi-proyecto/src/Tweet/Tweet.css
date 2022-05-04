@@ -1,0 +1,31 @@
+.tweets {
+    color: black;
+}
+
+.corazon {
+    color: black;
+}
+
+.tweet-rojo {
+    background: #F50D5A;
+}
+
+.tweet-naranjo {
+    background: #FF865C;
+}
+
+.tweet-amarillo {
+    background: #FFEA5C;
+}
+
+.tweet-verde {
+    background: #00DA76;
+}
+
+.tweet-celeste {
+    background: #0096CE;
+}
+
+.tweet-morado {
+    background: #800FFF;
+}
