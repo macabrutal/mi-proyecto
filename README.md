@@ -1,16 +1,16 @@
-Proyecto Dev-United App con React JS:
+# Proyecto Dev-United App con React JS:
 - Es una Aplicación fullstack que simula una Red Social como Twitter, donde el target son programadores.
 
-#Tecnologías utilizadas:
+# Tecnologías utilizadas:
 - React JS para hacer el front-end.
 - Firebase para hacer back-end.
 
-#¿Quieres obtener el repositorio?:
+# ¿Quieres obtener el repositorio?:
 Usando Git puedes escoger la forma que prefieras:
 - a. Clonar el repositorio
 - b. Descargar el ZIP 
 
-#Estructura de la app:
+# Estructura de la app:
 Dentro de src están todos los componentes necesarios para la construcción de la app:
 - Carpetas con componentes por separado (Js y css de cada cual)
 - img: imágenes
