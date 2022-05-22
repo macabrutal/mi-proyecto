@@ -1,9 +1,35 @@
+
+.tweet-avatar{
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+   
+}
+
 .tweets {
-    color: black;
+    width: 100%;
+    color: #fff;
 }
 
 .corazon {
-    color: black;
+    align-items: center;
+    display: flex;
+    color: #fff;
+   
+}
+
+.tweet-header{
+    width: 100%;
+    display: flex;
+}
+
+.tweet-autor{
+    margin-right: 12px;
+    padding: 0 5px;
+}
+
+.tweet-fecha{
+    margin-right: 170px;;
 }
 
 .tweet-rojo {

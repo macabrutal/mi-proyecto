@@ -4,6 +4,7 @@ import logo_small_title from "./img/logo_small_title.svg";
 import { firestore, loginConGoogle, auth, logout } from "./firebase";
 
 import "./App.css";
+import "./index.css";
 import Tweet from "./Tweet/Tweet";
 import Formulario from "./Formulario/Formulario";
 import ConfigurarPerfil from "./ConfigurarPerfil/ConfigurarPerfil";
@@ -86,6 +87,7 @@ export default function App() {
         id: doc.id,
         fechaCreacion: doc.data().fechaCreacion,
         imagenAutor: user.photoURL,
+        color: doc.data().color
       };
       //el cual añadiré dentro del estado el nuevo tweet y luego los demás tweets
       setTweets([nuevoTweet, ...tweets]);
@@ -162,7 +164,7 @@ export default function App() {
   };
 
   return (
-    <div className="container">
+    <div >
       {!user && <Login loginConGoogle={loginConGoogle} />}
 
       {user && !perfilCompleto && (
@@ -177,7 +179,7 @@ export default function App() {
       )}
 
       {perfilCompleto && (
-        <div className="user-profile">
+        <div className="user-profile ">
           {!filtrarTweets ? (
             <>
               <img
@@ -190,7 +192,8 @@ export default function App() {
                 style={{ marginLeft: "100px" }}
                 onClick={() => configurarPerfil()}
               >
-                <img alt="logo" src="./img/logo_small.svg"/>
+                <img alt="logo" src={logo_small}/>
+                <img alt="logo" src={logo_small_title} className="logo_small_title"/>
               </div>
             </>
           ) : (
@@ -209,8 +212,9 @@ export default function App() {
 
       {/* Formulario */}
       {user && perfilCompleto && (
-        <>
-          <img alt="user-profile" src={usuarioElegido} />
+        <div className="main_section">
+          <img alt="user-profile" src={usuarioElegido} className="user-avatar"
+/>
 
           {!filtrarTweets && (
             <Formulario
@@ -220,7 +224,7 @@ export default function App() {
               loadingCreacion={loadingCreacion}
             />
           )}
-        </>
+        </div>
       )}
       {/* fin----Formulario------ */}
 

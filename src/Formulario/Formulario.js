@@ -1,6 +1,9 @@
 import React from "react";
 import { Spinner } from "react-bootstrap";
 
+
+import "./Formulario.css"
+
 export default function Formulario({
   tweet,
   sendTweet,
@@ -19,9 +22,9 @@ export default function Formulario({
         placeholder="What's happening?"
       ></textarea>
 
-      <div>
-        {tweet.tweet ? tweet.tweet.length : 0}
-        <p>200 max.</p>
+      <div className="tweet-count">
+       <span> {tweet.tweet ? tweet.tweet.length : 0}</span>
+        <span>200 max.</span>
       </div>
 
       <button onClick={sendTweet} className="send">

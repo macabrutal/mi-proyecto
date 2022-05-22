@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.form{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+
+}
+
+textarea{
+    width: 500px;
+    height: 113px;
+    background-color: #2f112d;
+    border: none;
+    color: #fff;
+    padding: 1.5rem;
+    resize: none;
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.333333px;
+    color: #914D8B;
+    margin-top: 0;
+    
+}
+
+.tweet-count{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.tweet-count span{
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 16px;
+ }
+
+.tweet-count span:nth-child(2) {
+    color: #f50d5a;  
+}
+
+.send{
+width: 102px;
+height: 35px;
+font-family: slkscrb;
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+color: #150714;
+padding: 1rem 2rem;
+background-color:#2F112D;
+border: none;
+cursor: pointer;
+padding: 0 20px;
+    
+}
+
