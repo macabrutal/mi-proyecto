@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import logo_small from "./img/logo_small.svg";
 import logo_small_title from "./img/logo_small_title.svg";
+import logout_img from "./img/logout.svg";
+import back from "./img/back.svg"
 import { firestore, loginConGoogle, auth, logout } from "./firebase";
 
 import "./App.css";
@@ -198,11 +200,17 @@ export default function App() {
             </>
           ) : (
             <>
+            <div className="back">
+              <img src={back} alt="back"/>
               <p onClick={() => verTodosTweets()}>{userName}</p>
-
+            </div>
+              
               {user.photoURL === usuarioElegido && (
                 <button className="logout-btn" onClick={cerrarSesion}>
-                  Log out
+                  <div>
+                    <img src={logout_img} alt="logout"/>
+                  </div>
+                  <p>Log out</p>
                 </button>
               )}
             </>

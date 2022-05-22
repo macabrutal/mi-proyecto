@@ -108,18 +108,52 @@ text-align: left;
   align-items: center;
   justify-content: center;
   margin-bottom: 0 ;
-  width: 100%;
+  margin: 0 auto;
+  width: 605px;
   height: 52px;
-  background-color: #250C23;
+  justify-content: space-between;
+  /* background-color: #250C23; */
   padding: 0.5rem 1.5rem;
-    /* background-color: #250C23; */
-  
+}
+
+.user-profile p{
+  height: 20px;
+  left: 54px;
+  top: 16px;
+  margin:16px;
+  font-family: 'Silkscreen';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 .user-profile button {
+  width: 116px;
+  height: 35px;
   margin-left: 10px;
-  padding: 10px;
+  padding: 6px; 
+  background-color: #f50d5a;
+  color: #250c23;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0;
+  cursor: pointer;
+  
+  /* padding: 0.5rem; */
+  
 }
+
+.back{
+  display: flex;
+  align-items: center;
+}
+ .back img{
+  cursor: pointer;
+    padding: 1rem 0;
+ }
 
 .user-profile-pic {
   border-radius: 50%;
@@ -187,6 +221,17 @@ top: calc(50% - 100px/2 - 103px);
   cursor: pointer;
   background-color: blue;
   border: none;
+}
+
+.logout-btn p{
+  /* font-family: slkscrb; */
+  margin-right: 0.5rem;
+font-family: 'Silkscreen';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 16px;
+color: #250C23;
 }
 
 .user-profile-pic {
