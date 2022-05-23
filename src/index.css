@@ -1,35 +1,33 @@
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "slkscr";
+  src: local("slkscr"), url("./fonts/slkscr.ttf") format("truetype");
+  font-weight: normal;
 }
 
 body {
   margin: 0;
   font-size: 16px;
-  font-family: 'Fira Code','Roboto',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "slkscr";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #2E132C;
+  background-color: #2e132c;
   color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-textarea{
+textarea {
   width: 400px;
   height: 120px;
   margin-top: 15px;
   border: none;
 }
 
-input{
+input {
   width: 280px;
   height: 34px;
   border-radius: 6px;
@@ -37,11 +35,11 @@ input{
   border: none;
 }
 
-.send{
+.send {
   height: 38px;
   font-size: 16px;
-  font-weight:600;
-  border-radius:6px;
+  font-weight: 600;
+  border-radius: 6px;
   color: #fff;
   padding: 10px;
   cursor: pointer;
@@ -50,7 +48,7 @@ input{
   margin-top: 5px;
 }
 
-.contenedorTweet{
+.contenedorTweet {
   display: flex;
   width: 700px;
   padding: 26px 0;
@@ -59,21 +57,20 @@ input{
   justify-content: space-between;
 }
 
-.tweets{
-width: 60%;
-padding-left: 20px;
-text-align: left;
+.tweets {
+  width: 60%;
+  padding-left: 20px;
+  text-align: left;
 }
 
-.elementos_tweet{
+.elementos_tweet {
   width: 160px;
   display: flex;
   margin: 0 auto;
   padding: 34px 0;
-  
 }
 
-.elementos_tweet span{
+.elementos_tweet span {
   display: flex;
   width: 60px;
   margin: 0 auto;
@@ -81,47 +78,47 @@ text-align: left;
   border: 1px solid red;
   border-radius: 6px;
   cursor: pointer;
- 
 }
 
-.elementos_tweet div{
+.elementos_tweet div {
   padding-top: 10px;
-  margin-left: 5px; 
+  margin-left: 5px;
 }
 
-.delete{
+.delete {
   cursor: pointer;
   border: none;
-  background-color: #2E132C;
+  background-color: #2e132c;
 }
 
-.img_corazon{
+.img_corazon {
   width: 20px;
   justify-content: center;
   align-items: center;
   margin-right: 12px;
-
 }
 
 .user-profile {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0 ;
+  margin-bottom: 0;
   margin: 0 auto;
-  width: 605px;
+  width: 700px;
   height: 52px;
   justify-content: space-between;
-  /* background-color: #250C23; */
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 0;
 }
 
-.user-profile p{
+.user-profile img {
+  cursor: pointer;
+}
+
+.user-profile p {
   height: 20px;
   left: 54px;
   top: 16px;
-  margin:16px;
-  font-family: 'Silkscreen';
+  margin: 16px;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -129,10 +126,9 @@ text-align: left;
 }
 
 .user-profile button {
-  width: 116px;
   height: 35px;
   margin-left: 10px;
-  padding: 6px; 
+  padding: 6px;
   background-color: #f50d5a;
   color: #250c23;
   display: flex;
@@ -141,32 +137,40 @@ text-align: left;
   justify-content: space-between;
   border-radius: 0;
   cursor: pointer;
-  
+
   /* padding: 0.5rem; */
-  
 }
 
-.back{
+.back {
   display: flex;
   align-items: center;
-}
- .back img{
   cursor: pointer;
-    padding: 1rem 0;
- }
+}
+
+.back img {
+  padding: 1rem 0;
+}
 
 .user-profile-pic {
   border-radius: 50%;
   margin-right: 10px;
 }
-.logo_small_title{
-  margin-left: 111px;
+
+.main_section {
+  background-color: #150714;
+  padding: 3rem 20%;
+  background-color: #150714;
+  display: flex;
+  justify-content: space-around;
 }
 
-.main_section{
-  display: flex;
-  background-color: #150714;
-  padding: 3rem 25%;
+.main-centered {
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-picture {
+  border-radius: 50%;
 }
 
 .user-avatar {
@@ -175,7 +179,6 @@ text-align: left;
   height: 56px;
   border-radius: 50%;
   margin-right: 17px;
-  
 }
 
 /* login */
@@ -214,8 +217,8 @@ top: calc(50% - 100px/2 - 103px);
 .logout-btn {
   margin: 20px;
   font-size: 16px;
-  font-weight:600;
-  border-radius:6px;
+  font-weight: 600;
+  border-radius: 6px;
   color: #fff;
   padding: 10px;
   cursor: pointer;
@@ -223,15 +226,12 @@ top: calc(50% - 100px/2 - 103px);
   border: none;
 }
 
-.logout-btn p{
+.logout-btn p {
   /* font-family: slkscrb; */
-  margin-right: 0.5rem;
-font-family: 'Silkscreen';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 16px;
-color: #250C23;
+  /* margin-right: 0.5rem; */
+  font-size: 16px;
+  line-height: 16px;
+  color: #250c23;
 }
 
 .user-profile-pic {
@@ -241,25 +241,25 @@ color: #250C23;
 }
 
 .user-profile-pic-rojo {
-  border: 4px #F50D5A solid;
+  border: 4px #f50d5a solid;
 }
 
 .user-profile-pic-naranjo {
-  border: 4px #FF865C solid;
+  border: 4px #ff865c solid;
 }
 
 .user-profile-pic-amarillo {
-  border: 4px #FFEA5C solid;
+  border: 4px #ffea5c solid;
 }
 
 .user-profile-pic-verde {
-  border: 4px #00DA76 solid;
+  border: 4px #00da76 solid;
 }
 
 .user-profile-pic-celeste {
-  border: 4px #0096CE solid;
+  border: 4px #0096ce solid;
 }
 
 .user-profile-pic-morado {
-  border: 4px #800FFF solid;
+  border: 4px #800fff solid;
 }

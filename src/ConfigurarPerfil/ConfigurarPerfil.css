@@ -1,127 +1,126 @@
-.colors{
-    display: flex;
-    flex-direction: row ;
-    margin-bottom: 52px;
+.colors {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 52px;
 }
 
 .color-select {
-    width: 58px;
-    height: 58px;
-    margin-right: 15px;
-   
+  width: 58px;
+  height: 58px;
+  margin-right: 15px;
 }
 
-.container-perfil{
-    padding-top: 200px;  
+.container-perfil {
+  padding-top: 200px;
 }
 
-.logo-perfil{
-    position: absolute;
-    width: 470px;
-    height: 287px;  
+.logo-perfil {
+  position: absolute;
+  width: 50%;
+  height: 287px;
 }
 
-.h1-perfil{
-    font-family: Silkscreen;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 50px;
-    line-height: 50px;
-    letter-spacing: -0.333333px;
+.h1-perfil {
+  font-family: "slkscr";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: -0.333333px;
 }
 
-.user{
-    color: #f50d5a;
-    font-family: Silkscreen;
-	font-size: 50px;
-	font-style: uppercase;
+.user {
+  color: #f50d5a;
+  font-family: "slkscr";
+  font-size: 50px;
+  font-style: uppercase;
 }
 
-.username-input{
-    width: 425px;
-    height: 67px;
-    align-items: center;
-	background-color: #150714;
-    padding: 18px;
-    color:  #914D8B!important;
-    font-family: 'Fira Code';
-    font-style: normal;
-    font-weight: 450;
-    font-size: 24px;
-    margin: 30px 0;
+.username-input {
+  width: 425px;
+  height: 67px;
+  align-items: center;
+  background-color: #150714;
+  padding: 18px;
+  color: #914d8b !important;
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 24px;
+  margin: 30px 0;
 }
 
-.select-text{
-    font-family: 'Fira Code';
-    font-style: normal;
-    font-weight: 450;
-    font-size: 24px;
-    line-height: 31px;
-    align-items: center;
-    letter-spacing: -0.333333px;
-    color: #ffffff;
-    margin-bottom: 27px;
+.select-text {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 24px;
+  line-height: 31px;
+  align-items: center;
+  letter-spacing: -0.333333px;
+  color: #ffffff;
+  margin-bottom: 27px;
 }
 
 .rojo {
-    background: #F50D5A;
+  background: #f50d5a;
 }
 
 .naranjo {
-    background: #FF865C;
+  background: #ff865c;
 }
 
 .amarillo {
-    background: #FFEA5C;
+  background: #ffea5c;
 }
 
 .verde {
-    background: #00DA76;
+  background: #00da76;
 }
 
 .celeste {
-    background: #0096CE;
+  background: #0096ce;
 }
 
 .morado {
-    background: #800FFF;
+  background: #800fff;
 }
 
 .selected {
-    border: 2px white solid;
+  border: 4px white solid;
 }
 
-.bot-continue{
-    width:425px;
-    height: 67px;
-    background-color: #00DA76;
-    border: none;
-    cursor: pointer;
-    font-family: 'Silkscreen';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: -0.333333px;
-    color: #FFFFFF;
-    margin-bottom: 86px;
+.bot-continue {
+  width: 425px;
+  height: 67px;
+  background-color: #00da76;
+  border: none;
+  cursor: pointer;
+  font-family: "slkscr";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.333333px;
+  color: #ffffff;
+  margin-bottom: 86px;
 }
 
-.footer1-perfil{
-    width:425px;
-    height: 23px;
-    font-family: 'Fira Code';
-    font-style: normal;
-    font-weight: 450;
-    font-size: 18px;
-    line-height: 24px;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.333333px;
-    color: #60265B;
-  }
+.footer1-perfil {
+  width: 425px;
+  height: 23px;
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.333333px;
+  color: #60265b;
+}
 
-  .footer-rojo{
-    color: #f50d5a;
-  }
+.footer-rojo {
+  color: #f50d5a;
+}

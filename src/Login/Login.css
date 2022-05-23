@@ -1,8 +1,8 @@
-.container-login{
+.container-login {
   padding-top: 200px;
 }
 
-.logo-login{
+.logo-login {
   position: absolute;
   width: 50%;
   height: 287px;
@@ -10,99 +10,96 @@
 
 /* BOTON LOGIN */
 .login-btn {
-    width: 425px;
-    height: 58px;
-    border: none;
-    display: flex;
-    margin-bottom: 90px;
-  }
+  width: 425px;
+  height: 58px;
+  border: none;
+  display: flex;
+  margin-bottom: 90px;
+}
 
-  .login-btn1 {
-    width: 59px;
-    height: 58px;
-    background: #FFFFFF;
-    border: 2px solid #4285F4;
-    box-sizing: border-box;
-    border-radius: 5px 0px 0px 5px;
-    cursor: pointer;
-    justify-content: center;
-  }
+.login-btn1 {
+  width: 59px;
+  height: 58px;
+  background: #ffffff;
+  border: 2px solid #4285f4;
+  box-sizing: border-box;
+  border-radius: 5px 0px 0px 5px;
+  cursor: pointer;
+  justify-content: center;
+}
 
-  .login-btn2 {
-    width: 366px;
-    height: 58px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.333333px;
-    border-radius: 0px 5px 5px 0px;
-    border: none;
-    color: #FFFFFF;
-    padding: 17px;
-    background-color: #4285F4;
-    cursor: pointer;
-    justify-content: center;
-  }
-  /* FIN BOTON LOGIN */
+.login-btn2 {
+  width: 366px;
+  height: 58px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.333333px;
+  border-radius: 0px 5px 5px 0px;
+  border: none;
+  color: #ffffff;
+  padding: 17px;
+  background-color: #4285f4;
+  cursor: pointer;
+  justify-content: center;
+}
+/* FIN BOTON LOGIN */
 
-  .h1-signIn{
-    font-family: Silkscreen;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 50px;
-    line-height: 50px;
-    letter-spacing: -0.333333px;
+.h1-signIn {
+  font-family: Silkscreen;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: -0.333333px;
 
+  font-family: "slkscr";
+  /* font-size: 3.5rem; */
+  /* font-style: bold; */
+  font-weight: 700;
+  line-height: 50px;
+  display: flex;
+  margin-bottom: 37px;
+  align-items: center;
+  /* letter-spacing: -0.333333px; */
+  width: 433px;
+  height: 100px;
+  left: calc(50% - 433px / 2 - 0.5px);
+  top: calc(50% - 100px / 2 - 103px);
+}
 
-    /* font-family: 'slkscrb'; */
-	  /* font-size: 3.5rem; */
-    /* font-style: bold; */
-    font-weight: 700;
-    line-height: 50px;
-    display: flex;
-    margin-bottom: 37px;
-    align-items: center;
-    /* letter-spacing: -0.333333px; */
-    width: 433px;
-    height: 100px;
-    left: calc(50% - 433px/2 - 0.5px);
-    top: calc(50% - 100px/2 - 103px);
-    }
+.p-signIn {
+  font-family: "Fira Code";
+  width: 433px;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 24px !important;
+  line-height: 31px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.333333px;
+  color: #ffffff;
+  margin-bottom: 38px;
+}
 
+.footer_signIn {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.333333px;
+  color: #60265b;
+}
 
-    .p-signIn{
-    font-family: 'Fira Code';
-    width: 433px;
-    font-style: normal;
-    font-weight: 450;
-    font-size: 24px !important;
-    line-height: 31px;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.333333px;
-    color: #FFFFFF;
-    margin-bottom: 38px;
-    }
-
-    .footer_signIn{
-      font-family: 'Fira Code';
-      font-style: normal;
-      font-weight: 450;
-      font-size: 18px;
-      line-height: 24px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      letter-spacing: -0.333333px;
-      color: #60265B;
-    }
-
-    .footer-rojo{
-      color: #f50d5a;
-    }
-
+.footer-rojo {
+  color: #f50d5a;
+}

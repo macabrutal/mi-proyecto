@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import logo_small from "./img/logo_small.svg";
 import logo_small_title from "./img/logo_small_title.svg";
 import logout_img from "./img/logout.svg";
-import back from "./img/back.svg"
+import back from "./img/back.svg";
 import { firestore, loginConGoogle, auth, logout } from "./firebase";
 
 import "./App.css";
@@ -22,7 +22,7 @@ export default function App() {
     email: "",
     fechaCreacion: "",
     imagenAutor: "",
-    color: ""
+    color: "",
   });
   const [user, setUser] = useState();
   const [userName, setUserName] = useState();
@@ -47,7 +47,7 @@ export default function App() {
             email: doc.data().email,
             fechaCreacion: doc.data().fechaCreacion,
             imagenAutor: doc.data().imagenAutor,
-            color: doc.data().color
+            color: doc.data().color,
           };
         });
         setTweets(tweets);
@@ -89,7 +89,7 @@ export default function App() {
         id: doc.id,
         fechaCreacion: doc.data().fechaCreacion,
         imagenAutor: user.photoURL,
-        color: doc.data().color
+        color: doc.data().color,
       };
       //el cual añadiré dentro del estado el nuevo tweet y luego los demás tweets
       setTweets([nuevoTweet, ...tweets]);
@@ -166,7 +166,7 @@ export default function App() {
   };
 
   return (
-    <div >
+    <div>
       {!user && <Login loginConGoogle={loginConGoogle} />}
 
       {user && !perfilCompleto && (
@@ -181,7 +181,7 @@ export default function App() {
       )}
 
       {perfilCompleto && (
-        <div className="user-profile ">
+        <div className="user-profile">
           {!filtrarTweets ? (
             <>
               <img
@@ -190,27 +190,26 @@ export default function App() {
                 src={user.photoURL}
                 onClick={() => verPerfilUsuario(user.photoURL)}
               />
-              <div
-                style={{ marginLeft: "100px" }}
+              <img alt="logo" src={logo_small} onClick={() => configurarPerfil()}/>
+              <img
+                alt="logo"
+                src={logo_small_title}
                 onClick={() => configurarPerfil()}
-              >
-                <img alt="logo" src={logo_small}/>
-                <img alt="logo" src={logo_small_title} className="logo_small_title"/>
-              </div>
+              />
             </>
           ) : (
             <>
-            <div className="back">
-              <img src={back} alt="back"/>
-              <p onClick={() => verTodosTweets()}>{userName}</p>
-            </div>
-              
+              <div className="back" onClick={() => verTodosTweets()}>
+                <img src={back} alt="back" />
+                <p >{userName}</p>
+              </div>
+
               {user.photoURL === usuarioElegido && (
                 <button className="logout-btn" onClick={cerrarSesion}>
                   <div>
-                    <img src={logout_img} alt="logout"/>
+                    <img src={logout_img} alt="logout" />
                   </div>
-                  <p>Log out</p>
+                  <p >Log out</p>
                 </button>
               )}
             </>
@@ -220,9 +219,20 @@ export default function App() {
 
       {/* Formulario */}
       {user && perfilCompleto && (
-        <div className="main_section">
-          <img alt="user-profile" src={usuarioElegido} className="user-avatar"
-/>
+        <div className={`main_section ${filtrarTweets ? "main-centered": ""}`}>
+          <img
+            alt="user-profile"
+            src={usuarioElegido}
+            className={filtrarTweets ? `profile-picture user-profile-pic-${color}`: "user-avatar"}
+          />
+
+          {
+            filtrarTweets && (
+            <h4 className={`tweet-autor tweet-${color}`} style={{marginTop: '1rem'}}>
+              {userName}
+            </h4>
+            )
+          }
 
           {!filtrarTweets && (
             <Formulario
@@ -266,7 +276,6 @@ export default function App() {
                 />
               );
             }))}
-      {/* fin----Formulario------ */}
     </div>
   );
 }
