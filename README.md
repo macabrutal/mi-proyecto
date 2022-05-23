@@ -17,6 +17,10 @@ Dentro de src están todos los componentes necesarios para la construcción de l
 - fonts: fuentes 
 - firebase.js: integra la base de datos de Firebase con la app e importa las funcionalidades.
 
+# ¿Quiéres desloguearte?
+- En el nav debes seleccionar la imagen del user-profile, en la esquina superior izquierda.
+- Te dirigirás a la vista donde en el nav verás el botón "Log out"
+- Selecciona el botón "Log out" para desloguearte
 
 # Getting Started with Create React App
 
