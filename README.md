@@ -4,6 +4,9 @@
 # Url:
 https://app-web-fullstack.netlify.app/
 
+# Repositorio en github:
+https://github.com/macabrutal/mi-proyecto
+
 # Tecnologías utilizadas:
 - React JS para hacer el front-end.
 - Firebase para hacer back-end.
